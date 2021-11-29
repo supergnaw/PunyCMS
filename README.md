@@ -29,11 +29,15 @@ These are the functions that perform as the primary workhorse for the class.
 
 ### Add Entry
 ```PHP
-add_entry();
+add_entry( $category, $title, $content, $author, $created = null );
 ```
 | Argument | Type | Description|
 | --- | --- | --- |
-| `$var` | Type | Description. |
+| `$category` | string | Category of the content. Used for grouping things together. |
+| `$title` | string | Title of the entry. |
+| `$content` | string | Content of the entry. |
+| `$author` | string | Author of the entry. |
+| `$created` | string | Optional date of entry as 'Y-m-d H:I:s'; the default is null and will Auto generate a date |
 
 ### Edit Entry
 ```PHP
